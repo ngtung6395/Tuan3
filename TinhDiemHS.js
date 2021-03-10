@@ -1,0 +1,14 @@
+let a;
+let b;
+let c;
+a=prompt("Nhập điểm vật lí");
+b=prompt("Nhập điểm hóa học");
+c=prompt("Nhập điểm sinh học");
+let DiemVatLi=parseInt(a);
+let DiemHoaHoc=parseInt(b);
+let DiemSinhHoc=parseInt(c);
+let total=DiemVatLi+DiemHoaHoc+DiemSinhHoc;
+let Avg=(DiemVatLi + DiemHoaHoc + DiemSinhHoc)/3;
+document.write("Tổng điểm 3 môn là "+total);
+document.write("<br>");
+document.write("Điểm trung bình 3 môn là "+ Avg);

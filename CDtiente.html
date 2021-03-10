@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <table>
+        <tr>
+            <th>Amount <br>
+                <input type="text" id="GiaTri1">
+            </th>
+            <th>From Currency <br>
+                <select id="GiaTri2">
+                    <option value="1">Việt Nam</option>
+                    <option value="23000">USD</option>
+                </select>
+            </th>
+            <th>To Currency <br>
+                <select id="GiaTri3">
+                    <option value="1">Việt Nam</option>
+                    <option value="23000">USD</option>
+                </select>
+            <th style="position: relative;top: 10px;">
+            <button onclick="Convert()" style="background-color: aqua" >Convert</button></th>
+
+        </tr>
+    </table>
+<body>
+<p id="show"></p>
+<script>
+    function Convert() {
+        let A = document.getElementById("GiaTri1").value;
+        let B = document.getElementById("GiaTri2").value;
+        let C = document.getElementById("GiaTri3").value;
+        let D = document.getElementById("GiaTri3").options[document.getElementById("GiaTri3").selectedIndex].text;
+        console.log(D)
+        let result = (A * B) / C;
+        document.getElementById("show").innerText = "result: " + result + " " + D;
+    }
+</script>
+</body>
+</html>
